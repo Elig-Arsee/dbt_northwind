@@ -1,0 +1,14 @@
+version: 2
+
+models:
+    - name: fct_orders
+      description: '{{ doc("orders_docs") }}'
+      columns:
+        - name: order_id
+          description: Unique ID for this table
+          tests:
+            - unique:
+                config:
+                  warn_if: ">200"
+                  error_if: ">600"
+            - not_null:{}
