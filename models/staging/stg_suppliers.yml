@@ -4,7 +4,7 @@ models:
     - name: stg_suppliers
       description: '{{ doc("orders_docs") }}'
       columns:
-        - name: product_id
+        - name: supplier_id
           description: Unique ID for this table
           tests:
             - unique:
