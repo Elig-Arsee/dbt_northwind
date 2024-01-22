@@ -47,4 +47,3 @@ sources:
         columns:
           - name: supplier_id
             description: Unique ID for this table
-
